@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive gallery Flex</title>
+
+        <style>
+            .container{
+                width: 90%;
+                max-width: 960px;
+                margin: 0 auto;
+                
+            }
+            .row1, .row1{
+                display: flex;
+                flex-flow: row wrap;
+                text-align: center;
+
+            }
+            .column{
+                flex-basis: 20%;
+                box-sizing: border-box;
+                padding: 8px;
+            }
+            .box {
+                border-radius: 5%;
+                border: solid #c5c5c5; 
+                background: linear-gradient(#7c90ff 80%, #fff 20%);
+            }
+            .box > p{
+                margin: 0;
+                text-align: center;
+                padding: 0 0 4px 0;
+                
+            }
+            #header, #text, h1, p{
+                flex-basis: 100%;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: lighter;
+                text-align: start;
+            }
+            img {
+                max-width: 100%;              
+            }
+            
+            @media screen and (max-width: 1024px){
+                .column{
+                    flex-basis: 20%;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .column{
+                    flex-basis: 33.33%;
+                }
+            }
+            @media screen and (max-width: 414px) {
+                .column{
+                    flex-basis: 100%;
+                }
+                .box > p {
+                    font-size: 18px;
+                }  
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>Gallery Heading</h1>
+        </header>
+            <div class="row1">
+                <div class="column">
+                <div class="box">
+                    <img src="placeholder-image.png" alt="#">
+                    <p>Image Title</p>
+                </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>               
+                <div class="column">
+                <div class="box">
+                    <img src="placeholder-image.png" alt="#">
+                    <p>Image Title</p>
+                </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>
+                <div class="column">
+                    <div class="box">
+                        <img src="placeholder-image.png" alt="#">
+                        <p>Image Title</p>
+                    </div>
+                    </div>                
+            </div>
+        <div id="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum culpa natus similique modi quis aliquid? Nisi beatae reprehenderit sit, iusto quas dolor, rerum magnam provident consequatur libero aspernatur quidem earum laborum voluptate eos magni harum, odio aperiam natus dolorem voluptatum soluta temporibus eum! Natus consectetur quos, accusantium culpa aspernatur vitae harum tenetur ad laudantium. Magni culpa laborum ad sequi? Earum officia laudantium nisi fuga odit. Suscipit dolor eos repudiandae natus dicta repellendus perferendis eligendi consequatur harum voluptate consequuntur, aut quaerat dolore autem maxime doloribus tempora animi, quas commodi possimus ad, deleniti sit corporis. Dolorem, itaque veniam.</p>
+        </div>
+    </div>
+</body>
+</html>
